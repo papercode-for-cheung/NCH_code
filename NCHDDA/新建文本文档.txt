@@ -1,0 +1,16 @@
+demo.py [-h] [--model MODEL] [--epochs EPOCHS] [--debug]
+               [--profiler PROFILER] [--comment COMMENT]
+               [--dataset_name {Cdataset,Fdataset,lrssl,hdvd,lagcn}]
+               [--drug_neighbor_num DRUG_NEIGHBOR_NUM]
+               [--disease_neighbor_num DISEASE_NEIGHBOR_NUM]
+               [--split_mode {global,local}] [--n_splits N_SPLITS]
+               [--drug_idx DRUG_IDX] [--disease_idx DISEASE_IDX]
+               [--global_test_all_zero] [--train_fill_unknown]
+               [--dataset_type {FullGraphDataset,PairGraphDataset}]
+               [--seed SEED] [--embedding_dim EMBEDDING_DIM]
+               [--layer_num LAYER_NUM] [--lr LR] [--dropout DROPOUT]
+               [--edge_dropout EDGE_DROPOUT] [--neighbor_num NEIGHBOR_NUM]
+               [--smooth] [--gnn_mode GNN_MODE]
+
+
+python demo.py --dataset_name Fdataset --n_splits 30 --dropout 0.1 --layer_num 5
